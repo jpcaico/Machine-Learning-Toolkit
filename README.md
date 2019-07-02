@@ -1,5 +1,7 @@
 # Machine-Learning-Toolkit
 
+Machine Learning Toolkit é uma plataforma criada para que você possa gerar e aplicar modelos de Aprendizado de Máquina automaticamente! 
+O objetivo desta plataforma não é prover explicações matemáticas complexas sobre os algoritmos e seus funcionamentos, métricas estatísticas e análises gráficas. Então, o objetivo é que o usuário consiga aplicar diferentes métodos de análise em seu próprio conjunto de dados de forma simples e intuitiva, sem que seja necessário qualquer tipo de conhecimento prévio sobre Aprendizado de Máquina e Programação de Computadores. 
 
 ### Passo 1: Instalar o Software R e RStudio (Opcional)
 
