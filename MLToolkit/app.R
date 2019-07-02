@@ -4433,7 +4433,7 @@ ui <- navbarPage(
 
           })
 
-          dat_KNN1 <- reactive({
+          dat_KNN <- reactive({
             knnpredict <- predict(fit_KNN(), newdata=teste_KNN())
             cm <- confusionMatrix(knnpredict, teste_KNN()[,input$YKNN2])
             dat = round(t(as.data.frame(as.matrix(cm,what="classes"))),3)
@@ -4441,11 +4441,7 @@ ui <- navbarPage(
 
           })
           
-          dat_KNN <- reactive({
-            
-            dat_KNN1()[,c(1,2,5,6,7,11)]
-            
-          })
+    
           # 
           # dat_KNN <- reactive({
           #   
@@ -5149,7 +5145,7 @@ ui <- navbarPage(
             
           })
           
-          dat_SVM1 <- reactive({
+          dat_SVM <- reactive({
             SVMpredict <- predict(fit_SVM(), newdata=teste_SVM())
             cm <- confusionMatrix(SVMpredict, teste_SVM()[,input$YSVM2])
             dat = round(t(as.data.frame(as.matrix(cm,what="classes"))),3)
@@ -5157,11 +5153,11 @@ ui <- navbarPage(
            dat
           })
           
-          dat_SVM <- reactive({
-            
-            dat_SVM1()[,c(1,2,5,6,7,11)]
-            
-          })
+          # dat_SVM <- reactive({
+          #   
+          #   dat_SVM1()[,c(1,2,5,6,7,11)]
+          #   
+          # })
           
           # 
           # dat_SVM <- reactive({
@@ -5631,19 +5627,19 @@ ui <- navbarPage(
             
           })
           
-          dat_ADC1 <- reactive({
+          dat_ADC <- reactive({
             adcpredict <- predict(fit_ADC(), newdata=teste_ADC())
             cm <- confusionMatrix(adcpredict, teste_ADC()[,input$YADC2])
             dat = round(t(as.data.frame(as.matrix(cm,what="classes"))),3)
             dat
           })
-          
-          dat_ADC <- reactive({
-            
-            dat_ADC1()[,c(1,2,5,6,7,11)]
-            
-          })
-          
+          # 
+          # dat_ADC <- reactive({
+          #   
+          #   dat_ADC1()[,c(1,2,5,6,7,11)]
+          #   
+          # })
+          # 
           output$specifics_ADC <- DT::renderDataTable({
             
             req(fit_ADC())
@@ -6138,18 +6134,19 @@ ui <- navbarPage(
             
           })
           
-          dat_RFC1 <- reactive({
+          dat_RFC <- reactive({
             RFCpredict <- predict(fit_RFC(), newdata=teste_RFC())
             cm <- confusionMatrix(RFCpredict, teste_RFC()[,input$YRFC2])
             dat = round(t(as.data.frame(as.matrix(cm,what="classes"))),3)
             dat
           })
+          # 
+          # dat_RFC <- reactive({
+          #   
+          #   dat_RFC1()[,c(1,2,5,6,7,11)]
+          #   
+          # })
           
-          dat_RFC <- reactive({
-            
-            dat_RFC1()[,c(1,2,5,6,7,11)]
-            
-          })
           output$specifics_RFC <- DT::renderDataTable({
             
             req(fit_RFC())
@@ -6653,18 +6650,18 @@ ui <- navbarPage(
             
           })
           
-          dat_NB1 <- reactive({
+          dat_NB <- reactive({
             NBpredict <- predict(fit_NB(), newdata=teste_NB())
             cm <- confusionMatrix(NBpredict, teste_NB()[,input$YNB2])
             dat = round(t(as.data.frame(as.matrix(cm,what="classes"))),3)
             dat
           })
-          
-          dat_NB <- reactive({
-            
-            dat_NB1()[,c(1,2,5,6,7,11)]
-            
-          })
+          # 
+          # dat_NB <- reactive({
+          #   
+          #   dat_NB1()[,c(1,2,5,6,7,11)]
+          #   
+          # })
           
           output$specifics_NB <- DT::renderDataTable({
             

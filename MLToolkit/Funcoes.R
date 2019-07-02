@@ -30,7 +30,7 @@ graficarImportanciaClassificacao <- function(modelo){
     ggtitle("Importância das variáveis") + theme(
       axis.text=element_text(size=12),
       axis.title=element_text(size=18),
-      plot.title = element_text(size=20, face = "bold"))
+      plot.title = element_text(size=20, face = "bold")) + theme(axis.text.x = element_text(angle = 45))
   
   
   ggplotly(p)
