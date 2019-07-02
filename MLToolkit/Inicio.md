@@ -1,0 +1,100 @@
+---
+title: "Inicio"
+author: "JoaoPaulo"
+date: "12 de abril de 2019"
+output: html_document
+---
+
+<style type="text/css">
+
+body, td {
+   font-size: 20px;
+}
+code.r{
+  font-size: 14px;
+}
+pre {
+  font-size: 14px
+}
+</style>
+
+
+$a + b $
+
+## **Machine Learning Toolkit**
+<br>
+
+- [Boas Vindas](#boasvindas)
+- [Como Utilizar a Ferramenta?](#utilizar)
+- [O que é Aprendizado de Máquina?](#ml)
+
+<br>
+
+<hr>
+
+
+### <a id="boasvindas"></a>**Boas Vindas**
+
+Olá, seja bem vindo ao Machine Learning Toolkit!
+Machine Learning Toolkit é uma plataforma criada para que você possa gerar e aplicar modelos de Aprendizado de Máquina e Inteligência Artificial automaticamente! <br>
+  O objetivo desta plataforma **não é prover explicações matemáticas complexas sobre os algoritmos e seus funcionamentos, métricas estatísticas e análises gráficas**, existem excelentes livros que já fazem isso muito bem... Então, para que serve? <br>
+  Aqui, a ideia é que você consiga aplicar diferentes métodos de análise no seu próprio conjunto de dados de forma simples e intuitiva, sem que seja necessário qualquer tipo de conhecimento prévio sobre Aprendizado de Máquina e Programação, por isso, as explicações e conceitos aqui apresentados servem apenas como direcionamento para qualquer interesse em se aprofundar no assunto. <br>
+  Crie seus próprios modelos, gere e compartilhe resultados em apenas alguns cliques, vamos lá?! <br>
+
+<hr>
+
+### <a id="utilizar"></a>**Como Utilizar a Ferramenta?**
+
+A ferramenta consiste em basicamente três etapas principais: **Criação dos Modelos** , **Utilização dos Modelos Criados (gerar previsões e classificações)** e **Consultar Informações sobre os Modelos e Resultados**. <br>
+Dito isso, podemos notar 5 grandes abas na parte superior da aplicação: <br>
+
+- **Página Inicial**: É esta página que você está agora. Apresenta uma visão geral sobre a aplicação, e conceitos gerais como um todo. <br>
+- **Informações sobre os Modelos**: Divida em sub-abas, apresenta tudo que você precisa saber para compreender quaisquer características dos modelos apresentados na aplicação. Esta aba será seu guia, cada vez que você se deparar com um termo, uma tabela, ou uma visualização não compreendida, poderá recorrer às explicações apresentadas nessa seção. <br>
+- **Regressão e Classificação**: Estas duas abas são as seções responsáveis por criar os modelos e utilizá-los. Após definir o escopo do seu problema (regressão ou classificação), selecione um dos algoritmos listados. A partir daí, o processo é bem simples: <br>
+
+Na aba `Criar Modelo`: <br>
++ Carregue um conjunto de dados próprio em **formato csv** <br>
++ Preencha todos os campos disponíveis, podendo navegar entre as opções disponíveis. <br>
++ Crie seu Modelo e o Exporte após criado (caso queira). <br>
+
+Na aba `Realizar Previsões`: <br>
++ Entre com um Conjunto de Dados novos, que possui as mesmas colunas correspondentes às utilizadas para gerar o modelo. <br>
++ Selecione entre Importar um Modelo já existente, ou utilizar o criado no momento na aplicação. <br>
++ Gere os resultados e faça o Download caso queira. <br>
+  
+- **Sobre**: Apresenta informações sobre a construção da aplicação, as ferramentas principais utilizadas, considerações sobre o autor, informações de contato e referências úteis. <br>
+  
+<hr>
+  
+### <a id="ml"></a>**O que é Aprendizado de Máquina?**
+
+Existem diversas definições de Aprendizado de Máquina, criadas por várias pessoas diferentes. <br>
+Este termo pode-se referir à criação e ao uso de modelos que são aprendidos a partir de dados. Ou seja, o objetivo é usar dados já existentes para desenvolver modelos que possam ser usados para prever possíveis saídas quando utilizados dados novos. <br>
+De forma mais formal, Arthur Samuel define Aprendizado de Máquina em 1959 como " *O campo de estudo que dá aos computadores a habilidade de aprender sem que sejam explicitamente programados para isso*". Tom Mitchell apresenta uma definição mais moderna que diz: *É dito que m computador aprende pela experiência E, com respeito a algum tipo de tarefa T e performance P, se sua performance P nas tarefas T, na forma medida por P, melhoram com a experiência E.* <br>
+Alguns exemplos de aplicação: <br>
+
+- Prever qual candidato ganhará as eleições em um país. <br>
+- Prever a ocorrência de doenças. <br>
+- Prever a probabilidade de uma pessoa comprar ou não um certo produto. <br>
+- Prever fraudes em transações de cartão de crédito. <br>
+- Prever a probabilidade de um aluno ser aprovado em certa disciplina na Universidade. <br>
+
+<hr>
+
+
+### **Tipos de Aprendizado e Problemas**
+
+As definições acima são boas já que elas apresentam objetivos claros do aprendizado de máquina. Porém deve-se ter em mente mais algumas definições para que se possa compreender melhor qual algoritmo pode ou não servir para a solução do problema proposto. Por isso, definem-se os tipos de aprendizado e os tipos de problema: <br>
+
+- **Aprendizado Supervisionado**: Neste tipo de aprendizado, tanto as variáveis de entrada quanto as variáveis de saída são conhecidas. Aqui, o objetivo é estabelecer uma relação entre as variáveis de entrada e a variável de saída, e o aprendizado será baseado nessa premissa. Nesta categoria existem dois tipos de problemas: <br>
+<br>
+  + **Regressão**: Problemas de regressão possuem saída contínua. Por exemplo : O preço de uma casa deve ser predito baseado em variáveis como área do imóvel, número de quartos, região, número de salas e assim por diante. O preço a ser predito é uma variável contínua. <br>
+  + **Classificação**: Problemas de classificação possuem saídas discretas. Por exemplo, um algoritmo se diz se uma pessoa vai ou não ter uma doença (sim ou não), um algoritmo que identifica homens ou mulheres em reconhecimento facial (homem ou mulher). Sim e Não, Homem e Mulher, são variáveis discretas.<br>
+  <br>
+- **Aprendizado Não Supervisionado**: Neste tipo de aprendizado, não existe variável de saída. O modelo deve extrair dos dados um padrão baseado em todas as variáveis disponibilizadas. Por exemplo, a segmentação de consumidores baseado em idade, gênero, renda, enre outros. <br>
+
+**Nesta ferramenta, estão disponíveis apenas algoritmos de Aprendizado Supervisionado, separados por problemas de Regressão e Classificação.**
+
+<hr>
+
+

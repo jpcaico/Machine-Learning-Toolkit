@@ -1,0 +1,51 @@
+---
+title: "Sobre"
+author: "JoaoPaulo"
+date: "12 de abril de 2019"
+output: html_document
+---
+
+> **Linguagem**
+
+Esta aplicação foi desenvolvida utilizando a linguagem de programação gratuita [R](https://www.r-project.org/) voltada para aplicações de visualização gráfica e computação estatística, e utilizando as biblioteca [Shiny](http://shiny.rstudio.com/) e [R Markdown](https://rmarkdown.rstudio.com/).
+
+<br>
+
+> **Modelos**
+
+Os modelos disponíveis nesta aplicação foram criados utilizando o pacote [caret](http://topepo.github.io/caret/index.html), que, segundo a própria documentação, é a abreviação de *Classification And REgression Training*, sendo um conjunto de funções que tentam simplificar o processo de criação de modelos preditivos. O pacote contém ferramentas para: divisão de dados, pré-processamento, seleção de recursos, ajuste de modelo usando reamostragem, estimativa de importância de variável, bem como outras funcionalidades.
+<br>
+
+Foram utilizados os modelos a seguir, que podem ser consultados na aba de [Modelos Disponíveis](https://topepo.github.io/caret/available-models.html) para maiores informações. <br>
+
+- Regressão Linear: *lm* <br>
+- Árvore de Decisão: *rpart2* <br>
+- Floresta Aletória (Random Forest): *rf* <br>
+- Máquina Vetor de Suporte: *svmLinear*, *svmPoly*, *svmRadial* <br>
+- K-Vizinhos Mais Próximos: *knn* <br>
+- Naive Bayes: *nb* <br>
+- Perceptron Multi Camadas: *mlpML* <br>
+
+> **Autor**
+
+A aplicação foi construída por [João Paulo Nóbrega Alvim](https://www.linkedin.com/in/joao-paulo-alvim/) sob a orientação do Prof Dr. Keiji Yamanaka, como parte do trabalho de conclusão de curso de Engenharia de Computação da Universidade Federal de Uberlândia. <br>
+Para sugestões, reporte de erros, ou qualquer tipo de contato, por favor envie um email para **joaopaulonobregaalvim@gmail.com**.
+<br>
+
+> **Referêcias Úteis**
+
+- [R](https://www.r-project.org/)
+- [RStudio](https://www.rstudio.com/)
+- [RShiny](http://shiny.rstudio.com/)
+- [RMarkdown](https://rmarkdown.rstudio.com/)
+- [Pacote Caret](http://topepo.github.io/caret/index.html)
+- [RShiny User Showcase](https://www.rstudio.com/products/shiny/shiny-user-showcase/)
+- [Blog Paulo Vasconcellos](https://paulovasconcellos.com.br/)
+- [Blog Machine Learning Mastery](https://machinelearningmastery.com/)
+- [Blog KD Nuggets](https://www.kdnuggets.com/)
+- [Github Pizza de Dados](https://github.com/leportella/datascience-pizza)
+- [Blog Data Aspirant](http://dataaspirant.com/)
+- [Glossário Machine Learning](https://developers.google.com/machine-learning/glossary/)
+- Plataformas de Cursos Online como [Coursera](https://www.coursera.org/), [DataScience Academy](https://www.datascienceacademy.com.br/) , [Udacity](https://www.udemy.com)
+<br>
+

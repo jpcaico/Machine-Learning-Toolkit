@@ -1,0 +1,20 @@
+---
+title: "Mensagem_Erro.Rmd"
+author: "JoaoPaulo"
+date: "8 de abril de 2019"
+output: html_document
+---
+
+## Ops! Infelizmente não foi possível criar o seu modelo :(
+
+Não foi possível criar o seu modelo. Para resolvermos essa situação, é preciso que você cheque alguns passos:
+
+1. Verifique como seu arquivo foi importado. (Clique no botão `Mostrar Dataset`). É necessário que esteja no formato *comma-separated-values* ou *csv*.
+2. Certifique que todos os campos foram preenchidos.
+3. Certifique que a variável **dependente** selecionada é diferente das variáveis **independentes**
+4. Certifique que está utilizando o tipo de algoritmo correto (Regressão ou Classificação).
+5. Se estiver utilizando parâmetros personalizados, certifique-se de que o valor escolhido faça sentido para o algoritmo escolhido.
+
+Caso, após todas as verificações, não for possível gerar o seu modelo, entre em contato com o administrador da aplicação.
+
+

@@ -1,0 +1,113 @@
+---
+title: "Parametros dos Modelos"
+author: "JoaoPaulo"
+date: "9 de abril de 2019"
+output: html_document
+mathjax: default
+---
+
+
+## **Hiperparâmetros**
+<hr>
+
+- [Introdução](#intro)
+- [Machine Learning Toolkit e Hiperparâmetros](#mlth)
+- [Hiperparâmetros Disponíveis](#hyper)
+
+<hr>
+
+#### <a id="intro"></a> **Breve Introdução**
+
+  Hiperparâmetros são variáveis de configuração que são definidas antes do início do processo de aprendizagem e, portanto, não estão diretamente relacionadas aos dados de treinamento. Diferentes algoritmos de aprendizado de máquina requerem seus próprios hiperparâmetros (alguns algoritmos mais simples como Regressão Linear, não requerem nenhum), como por exemplo, **número de neurônios** e **número de camadas escondidas** de uma rede neural, **tipo de kernel** de uma Máquina Vetor de Suporte (*Support Vector Machine*), entre outros. A maior parte da variação de desempenho dos algoritmos pode ser atribuída apenas a alguns hiperparâmetros dos modelos. <br>
+  <hr>
+
+#### <a id="mlth"></a> **Machine Learning Toolkit e Hiperparâmetros**
+
+  Dentro desta ferramenta, o usuário tem a opção de gerar os modelos com hiperparâmetros já pré-definidos. Neste caso, o modelo será executado considerando um intervalo de hiperparâmetros, e será tomado como resultado final aquele que apresentar o melhor desempenho dentro da métrica analisada.
+  Porém, é possível também que o usuário selecione seus próprios hiperparâmetros de acordo com seus interesses, apenas selecionando a opção `Escolher Hiperparâmetro` dentro do menu `Criar Modelo`.  <br> 
+<hr>
+
+#### <a id="hyper"></a>**Hiperparâmetros Disponíveis**
+
+  Seguem listados os hiperparâmetros disponíveis de cada modelo, acompanhados de uma breve explicação sobre seus significados, bem como os valores pré definidos na ferramenta. <br> 
+
+#### Árvore de Decisão
+
+  - **Profundidade Máxima** (*Max Depth*) : A profundidade máxima de qualquer nó da árvore final, com o nó raíz contado como profundidade zero. <br>
+    Padrão da Ferramenta : Os modelos são gerados considerando : `5,10,15,20`. <br> 
+
+#### Floresta Aleatória
+
+  - **mtry**: Número de variáveis disponíveis para a divisão em cada nó da árvore. <br>
+    Padrão da Ferramenta : Os modelos são gerados considerando: `1,2,3,4,5,6,7,8,9,10`. <br> 
+    
+#### Máquina Vetor de Suporte
+
+- **Kernel**: O tipo de Kernel. <br>
+  Padrão da Ferramenta : Os modelos são gerados considerando: `svmLinear`, `svmRadial`, `svmPoly` <br>
+  
+- **C**: Quanta tolerância queremos dar ao encontrar o limite de decisão. Quanto maior o C, maior a penalidade que o SVM recebe quando faz uma classificação incorreta. Ele também controla o trade off entre o limite de decisão suave e a classificação correta dos pontos de treinamento.<br>
+  Padrão da Ferramenta : Os modelos são gerados considerando: `0.1,  0.5, 1, 1.5, 2` <br>
+  
+- **Sigma**: Quanto maior o valor de sigma, tentará se ajustar exatamente ao conjunto de dados de treinamento, ou seja, pode causar erro de generalização e ajuste excessivo (*overfitting*).<br>
+ Padrão da Ferramenta : Os modelos são gerados considerando: `0.25,0.5,0.75, 0.9` <br>
+ 
+- **Scale**: O parâmetro de escala do kernel polinomial. É uma forma conveniente de normalizar padrões sem a necessidade de modificar os dados em si<br>
+ Padrão da Ferramenta : Os modelos são gerados considerando: `0.25,0.5,0.75, 0.9`  <br>
+ 
+- **Degree**: Grau do polinômio a ser adicionado <br>
+  Padrão da Ferramenta : Os modelos são gerados considerando: `1,2,3`
+  <br>
+  
+
+#### Naive Bayes
+
+  - **usekernel**: Nos permite usar uma estimativa de densidade do kernel para variáveis contínuas versus uma estimativa de densidade gaussiana. <br>
+  Padrão da Ferramenta: `TRUE, FALSE`
+  
+  - **adjust**: Nos permite ajustar a largura de banda da densidade do kernel (números maiores significam estimativa de densidade mais flexível.) <br>
+  Padrão da Ferramenta: `1,2,3,4,5`
+  
+  - **fL**: Nos permite incorporar o "suavizador" de Laplace (*Laplace Smoother*). <br>
+  Padrão da Ferramenta: `0, 0.5 , 1, 1.5, 2` <br>
+  
+#### K-Vizinhos Mais Próximos (*K-Nearest Neighbor*)
+
+  - **K**: número de vizinhos utilizados. <br>
+  Padrão da Ferramenta: `1, 3, 5, 7, 9, 11, 13, 15, 17, 19`<br>
+
+#### Perceptron Multi-Camadas
+  
+  - **layer1**: Número de neurônios na camada 1. <br>
+  Padrão da Ferramenta: `1, 2, 3`<br>
+  
+  - **layer2**: Número de neurônios na camada 2. <br>
+   Padrão da Ferramenta:  `1, 2, 3`<br>
+   
+  - **layer3**: Número de neurônios na camada 3. <br>
+   Padrão da Ferramenta:  `1, 2, 3`
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
